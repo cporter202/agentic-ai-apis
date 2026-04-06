@@ -157,7 +157,7 @@ function writeRootReadme(categoryCounts) {
     const today = new Date().toISOString().split('T')[0];
 
     let content = `<div align="center">\n\n`;
-    content += `<img src="./assets/readme-hero.svg" alt="agentic-ai-apis hero banner" width="100%" />\n\n`;
+    content += `<img src="./assets/readme-hero-v2.svg" alt="agentic-ai-apis hero banner" width="100%" />\n\n`;
     content += `<br />\n<br />\n\n`;
     content += `[![GitHub stars](https://img.shields.io/github/stars/cporter202/agentic-ai-apis?style=for-the-badge)](https://github.com/cporter202/agentic-ai-apis/stargazers)\n`;
     content += `[![GitHub forks](https://img.shields.io/github/forks/cporter202/agentic-ai-apis?style=for-the-badge)](https://github.com/cporter202/agentic-ai-apis/network/members)\n`;

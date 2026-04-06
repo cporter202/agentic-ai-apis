@@ -1,0 +1,65 @@
+<svg width="1600" height="720" viewBox="0 0 1600 720" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="80" y1="60" x2="1500" y2="680" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#07111F" />
+      <stop offset="0.5" stop-color="#10253D" />
+      <stop offset="1" stop-color="#0F3D39" />
+    </linearGradient>
+    <linearGradient id="accentA" x1="266" y1="118" x2="1451" y2="605" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#6EE7F9" />
+      <stop offset="0.5" stop-color="#60A5FA" />
+      <stop offset="1" stop-color="#34D399" />
+    </linearGradient>
+    <linearGradient id="accentB" x1="280" y1="220" x2="1320" y2="620" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFFFFF" stop-opacity="0.32" />
+      <stop offset="1" stop-color="#FFFFFF" stop-opacity="0.04" />
+    </linearGradient>
+    <filter id="blur" x="0" y="0" width="1600" height="720" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feGaussianBlur stdDeviation="60" />
+    </filter>
+  </defs>
+
+  <rect width="1600" height="720" rx="36" fill="url(#bg)" />
+
+  <g opacity="0.65" filter="url(#blur)">
+    <circle cx="1290" cy="146" r="120" fill="#38BDF8" />
+    <circle cx="1385" cy="470" r="130" fill="#34D399" />
+    <circle cx="360" cy="108" r="84" fill="#60A5FA" />
+  </g>
+
+  <rect x="54" y="54" width="1492" height="612" rx="30" fill="url(#accentB)" stroke="#FFFFFF" stroke-opacity="0.14" />
+
+  <rect x="96" y="96" width="230" height="46" rx="23" fill="#FFFFFF" fill-opacity="0.08" stroke="#FFFFFF" stroke-opacity="0.16" />
+  <text x="124" y="126" fill="#CFFAFE" font-family="Segoe UI, Arial, sans-serif" font-size="22" font-weight="700">CURATED FOR AGENT BUILDERS</text>
+
+  <text x="96" y="220" fill="#FFFFFF" font-family="Segoe UI, Arial, sans-serif" font-size="92" font-weight="800">agentic-ai-apis</text>
+  <text x="96" y="286" fill="#A5F3FC" font-family="Segoe UI, Arial, sans-serif" font-size="34" font-weight="600">2,036 production-ready APIs across Agents, AI Models, and MCP Servers</text>
+
+  <text x="96" y="360" fill="#D6E7F5" font-family="Segoe UI, Arial, sans-serif" font-size="28" font-weight="500">
+    Plug into the exact layers that matter for autonomous systems, tool-using assistants,
+  </text>
+  <text x="96" y="398" fill="#D6E7F5" font-family="Segoe UI, Arial, sans-serif" font-size="28" font-weight="500">
+    MCP-native workflows, and production AI products.
+  </text>
+
+  <g>
+    <rect x="96" y="470" width="408" height="138" rx="26" fill="#07111F" fill-opacity="0.45" stroke="#6EE7F9" stroke-opacity="0.30" />
+    <text x="130" y="518" fill="#A5F3FC" font-family="Segoe UI, Arial, sans-serif" font-size="22" font-weight="700">AGENTS</text>
+    <text x="130" y="575" fill="#FFFFFF" font-family="Segoe UI, Arial, sans-serif" font-size="54" font-weight="800">697 APIs</text>
+  </g>
+
+  <g>
+    <rect x="548" y="470" width="408" height="138" rx="26" fill="#07111F" fill-opacity="0.45" stroke="#60A5FA" stroke-opacity="0.32" />
+    <text x="582" y="518" fill="#BFDBFE" font-family="Segoe UI, Arial, sans-serif" font-size="22" font-weight="700">AI MODELS</text>
+    <text x="582" y="575" fill="#FFFFFF" font-family="Segoe UI, Arial, sans-serif" font-size="54" font-weight="800">1,208 APIs</text>
+  </g>
+
+  <g>
+    <rect x="1000" y="470" width="408" height="138" rx="26" fill="#07111F" fill-opacity="0.45" stroke="#34D399" stroke-opacity="0.34" />
+    <text x="1034" y="518" fill="#A7F3D0" font-family="Segoe UI, Arial, sans-serif" font-size="22" font-weight="700">MCP SERVERS</text>
+    <text x="1034" y="575" fill="#FFFFFF" font-family="Segoe UI, Arial, sans-serif" font-size="54" font-weight="800">131 APIs</text>
+  </g>
+
+  <path d="M1110 146C1170 102 1238 92 1302 112C1360 130 1408 173 1451 238" stroke="url(#accentA)" stroke-width="7" stroke-linecap="round" opacity="0.75" />
+  <path d="M1138 190C1192 161 1245 157 1292 171C1341 185 1384 217 1422 270" stroke="#FFFFFF" stroke-opacity="0.24" stroke-width="3" stroke-linecap="round" />
+</svg>

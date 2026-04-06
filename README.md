@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="./assets/readme-hero.svg" alt="Agentic AI APIs hero banner" width="100%" />
+<img src="./assets/readme-hero-v2.svg" alt="agentic-ai-apis hero banner" width="100%" />
 
 <br />
 <br />
