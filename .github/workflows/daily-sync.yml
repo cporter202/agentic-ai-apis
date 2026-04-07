@@ -1,0 +1,50 @@
+name: Daily Apify Sync
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '17 10 * * *'
+      timezone: 'America/New_York'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: daily-apify-sync
+  cancel-in-progress: false
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v6
+        with:
+          ref: ${{ github.ref }}
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v6
+        with:
+          node-version: 24
+
+      - name: Fetch latest Apify catalog
+        run: node settings/fetch_apify_actors.js
+
+      - name: Regenerate focused repo files
+        run: node settings/generate_readme_clean.js
+
+      - name: Commit and push changes
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+
+          if git diff --cached --quiet; then
+            echo "No tracked changes detected."
+            exit 0
+          fi
+
+          git commit -m "chore: sync daily Apify catalog"
+          git push

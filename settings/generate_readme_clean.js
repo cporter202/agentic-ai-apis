@@ -103,6 +103,50 @@ function groupActorsByAllowedCategory(allActors) {
     return grouped;
 }
 
+function getLatestModifiedDate(allActors) {
+    const includedActors = new Map();
+
+    for (const actor of allActors) {
+        if (shouldFilterActor(actor)) {
+            continue;
+        }
+
+        const categories = actor.categories || [];
+        const isIncluded = categories.some((category) => ALLOWED_CATEGORY_MAP.has(category));
+        if (!isIncluded) {
+            continue;
+        }
+
+        const key = `${actor.username || ''}/${actor.name || ''}`;
+        const current = includedActors.get(key);
+
+        if (!current) {
+            includedActors.set(key, actor);
+            continue;
+        }
+
+        const currentModified = current.modifiedAt ? Date.parse(current.modifiedAt) : 0;
+        const candidateModified = actor.modifiedAt ? Date.parse(actor.modifiedAt) : 0;
+        if (candidateModified > currentModified) {
+            includedActors.set(key, actor);
+        }
+    }
+
+    let latestTimestamp = 0;
+    for (const actor of includedActors.values()) {
+        const timestamp = actor.modifiedAt ? Date.parse(actor.modifiedAt) : 0;
+        if (Number.isFinite(timestamp) && timestamp > latestTimestamp) {
+            latestTimestamp = timestamp;
+        }
+    }
+
+    if (latestTimestamp === 0) {
+        return new Date().toISOString().split('T')[0];
+    }
+
+    return new Date(latestTimestamp).toISOString().split('T')[0];
+}
+
 function writeCategoryReadme(category, categoryActors) {
     const folderName = formatFolderName(category.displayName, categoryActors.length);
     const categoryDir = path.join(ROOT_DIR, folderName);
@@ -154,7 +198,7 @@ function removeDisallowedCategoryDirectories(allowedFolderNames) {
 
 function writeRootReadme(categoryCounts) {
     const totalCount = categoryCounts.reduce((sum, category) => sum + category.count, 0);
-    const today = new Date().toISOString().split('T')[0];
+    const latestModifiedDate = getLatestModifiedDate(actors);
 
     let content = `<div align="center">\n\n`;
     content += `<img src="./assets/readme-hero-v2.svg" alt="agentic-ai-apis hero banner" width="100%" />\n\n`;
@@ -183,7 +227,7 @@ function writeRootReadme(categoryCounts) {
     content += `|--------|-------|\n`;
     content += `| Total APIs | ${totalCount.toLocaleString()} |\n`;
     content += `| Categories | ${categoryCounts.length} |\n`;
-    content += `| Last Updated | ${today} |\n`;
+    content += `| Last Updated | ${latestModifiedDate} |\n`;
     content += `| Focus | Agentic AI infrastructure |\n\n`;
     content += `<table>\n`;
     content += `  <tr>\n`;
@@ -264,6 +308,7 @@ function writeRootReadme(categoryCounts) {
     content += `[![Star History Chart](https://api.star-history.com/svg?repos=cporter202/agentic-ai-apis&type=Date)](https://www.star-history.com/#cporter202/agentic-ai-apis&Date)\n\n`;
 
     content += `## Maintenance Notes\n\n`;
+    content += `- A GitHub Actions workflow now syncs the Apify catalog daily and commits only when upstream data actually changes.\n`;
     content += `- The generation scripts in [settings](./settings/) are configured to rebuild only the three tracked categories above.\n`;
     content += `- The visual README layout is now part of the repo's default presentation, not just a temporary pass.\n`;
     content += `- API links keep the existing affiliate tracking from the upstream source data.\n`;

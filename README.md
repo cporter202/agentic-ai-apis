@@ -151,5 +151,6 @@ Anything outside those three categories has been removed from the tracked reposi
 
 ## Maintenance Notes
 
+- A GitHub Actions workflow now syncs the Apify catalog daily and commits only when upstream data actually changes.
 - The generation scripts in [`settings`](./settings/) are configured to rebuild only the three tracked categories above.
 - The visual README layout is now part of the repo's default presentation, not just a temporary pass.
