@@ -15,14 +15,29 @@ const ROOT_DIR = path.join(__dirname, '..');
 const jsonPath = path.join(ROOT_DIR, 'apify_actors.json');
 
 const ALLOWED_CATEGORIES = [
-    { key: 'Agents', displayName: 'Agents' },
-    { key: 'AI', displayName: 'AI Models' },
-    { key: 'MCP Servers', displayName: 'MCP Servers' },
+    {
+        displayName: 'Agents',
+        folderName: 'agents-apis',
+        sourceKeys: ['AGENTS', 'Agents'],
+    },
+    {
+        displayName: 'AI Models',
+        folderName: 'ai-models-apis',
+        sourceKeys: ['AI'],
+    },
+    {
+        displayName: 'MCP Servers',
+        folderName: 'mcp-servers-apis',
+        sourceKeys: ['MCP_SERVERS', 'MCP Servers'],
+    },
 ];
 
-const ALLOWED_CATEGORY_MAP = new Map(
-    ALLOWED_CATEGORIES.map((category) => [category.key, category])
-);
+const ALLOWED_CATEGORY_MAP = new Map();
+for (const category of ALLOWED_CATEGORIES) {
+    for (const sourceKey of category.sourceKeys) {
+        ALLOWED_CATEGORY_MAP.set(sourceKey, category);
+    }
+}
 
 if (!fs.existsSync(jsonPath)) {
     throw new Error(`Missing source data at ${jsonPath}`);
@@ -53,10 +68,6 @@ function shouldFilterActor(actor) {
     return description === 'test' || (description === '' && (title.includes('my actor') || title.includes('test')));
 }
 
-function formatFolderName(displayName, count) {
-    return `${displayName.toLowerCase().replace(/\s+/g, '-')}-apis-${count}`;
-}
-
 function truncateDescription(description, maxLength = 200) {
     if (!description || description.length <= maxLength) {
         return description || '-';
@@ -76,7 +87,7 @@ function sanitizeTableValue(value) {
 }
 
 function groupActorsByAllowedCategory(allActors) {
-    const grouped = new Map(ALLOWED_CATEGORIES.map((category) => [category.key, []]));
+    const grouped = new Map(ALLOWED_CATEGORIES.map((category) => [category.displayName, []]));
 
     for (const actor of allActors) {
         if (shouldFilterActor(actor)) {
@@ -84,12 +95,13 @@ function groupActorsByAllowedCategory(allActors) {
         }
 
         const categories = actor.categories || [];
-        for (const category of categories) {
-            if (!ALLOWED_CATEGORY_MAP.has(category)) {
+        for (const categoryKey of categories) {
+            const category = ALLOWED_CATEGORY_MAP.get(categoryKey);
+            if (!category) {
                 continue;
             }
 
-            const list = grouped.get(category);
+            const list = grouped.get(category.displayName);
             const exists = list.some(
                 (entry) => entry.name === actor.name && entry.username === actor.username
             );
@@ -148,8 +160,7 @@ function getLatestModifiedDate(allActors) {
 }
 
 function writeCategoryReadme(category, categoryActors) {
-    const folderName = formatFolderName(category.displayName, categoryActors.length);
-    const categoryDir = path.join(ROOT_DIR, folderName);
+    const categoryDir = path.join(ROOT_DIR, category.folderName);
     fs.mkdirSync(categoryDir, { recursive: true });
 
     const sortedActors = [...categoryActors].sort((a, b) =>
@@ -181,10 +192,10 @@ function removeDisallowedCategoryDirectories(allowedFolderNames) {
             continue;
         }
 
-        if (!entry.name.endsWith('-apis-697') &&
-            !entry.name.endsWith('-apis-1208') &&
-            !entry.name.endsWith('-apis-131') &&
-            !/-apis-\d+$/.test(entry.name)) {
+        const looksLikeCategoryDir =
+            entry.name.endsWith('-apis') || /-apis-\d+$/.test(entry.name);
+
+        if (!looksLikeCategoryDir) {
             continue;
         }
 
@@ -321,14 +332,13 @@ const categoryCounts = [];
 const allowedFolderNames = new Set();
 
 for (const category of ALLOWED_CATEGORIES) {
-    const categoryActors = groupedActors.get(category.key) || [];
-    const folderName = formatFolderName(category.displayName, categoryActors.length);
-    allowedFolderNames.add(folderName);
+    const categoryActors = groupedActors.get(category.displayName) || [];
+    allowedFolderNames.add(category.folderName);
     writeCategoryReadme(category, categoryActors);
     categoryCounts.push({
         displayName: category.displayName,
         count: categoryActors.length,
-        folderName,
+        folderName: category.folderName,
     });
 }
 
