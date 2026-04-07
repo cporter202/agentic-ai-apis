@@ -186,6 +186,7 @@ function writeCategoryReadme(category, categoryActors) {
 
 function removeDisallowedCategoryDirectories(allowedFolderNames) {
     const topLevelEntries = fs.readdirSync(ROOT_DIR, { withFileTypes: true });
+    const stableFolderNames = new Set(ALLOWED_CATEGORIES.map((category) => category.folderName));
 
     for (const entry of topLevelEntries) {
         if (!entry.isDirectory()) {
@@ -196,6 +197,15 @@ function removeDisallowedCategoryDirectories(allowedFolderNames) {
             entry.name.endsWith('-apis') || /-apis-\d+$/.test(entry.name);
 
         if (!looksLikeCategoryDir) {
+            continue;
+        }
+
+        const isLegacyCountVariant = [...stableFolderNames].some(
+            (folderName) => entry.name.startsWith(`${folderName}-`)
+        );
+
+        if (isLegacyCountVariant) {
+            fs.rmSync(path.join(ROOT_DIR, entry.name), { recursive: true, force: true });
             continue;
         }
 
