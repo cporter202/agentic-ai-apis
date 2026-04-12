@@ -2,7 +2,7 @@
 
 <p align="right"><a href="../README.md#table-of-contents">Back to main list</a></p>
 
-**243 APIs in this category**
+**245 APIs in this category**
 
 | API Name | Description |
 |----------|-------------|
@@ -64,6 +64,7 @@
 | [Competitive Intelligence MCP Server](https://apify.com/alizarin_refrigerator-owner/competitive-intelligence-mcp-server?fpr=p2hrc6) | 9-in-1 MCP server for AI-powered competitor analysis. Use with Claude, GPT or any AI assistant that supports MCP tools. This MCP server bundles 9 competitive intelligence tools into one endpoint.... |
 | [Competitive Intelligence MCP Server](https://apify.com/onetapstudio/competitive-intelligence-mcp?fpr=p2hrc6) | Monitor competitors across their website, job postings, social media, and tech stack from one tool call. Detect changes, compare up to 5 competitors side by side, and identify what technologies they... |
 | [Confluence MCP Server](https://apify.com/scraper_guru/confluence-mcp-server?fpr=p2hrc6) | A Model Context Protocol (MCP) server that enables AI assistants to interact with Confluence Cloud. Search pages, read content, create and update documentation, manage spaces — directly from Claude,... |
+| [Content to Social MCP Server](https://apify.com/godberry/content-to-social-mcp?fpr=p2hrc6) | Transform any blog post or article URL into platform-optimized social media content. Returns ready-to-post content for Twitter/X threads, LinkedIn posts, Instagram captions, Facebook posts, and email... |
 | [Coolify MCP Server - AI DevOps Automation](https://apify.com/aimcp/coolify-mcp-server?fpr=p2hrc6) | Most Powerful Coolify MCP Server. Connect Claude, Cursor, AI IDEs and AI Agents directly to your self-hosted Coolify instance via this MCP server. Manage & inspect deployments, logs, health, and... |
 | [Crypto Whale Tracker: Exchange Inflow & Outflow Intelligence](https://apify.com/complex_intricate_networks/whale-exchange-flow-tracker?fpr=p2hrc6) | Track 'Smart Money' in real-time. Identify when whales move millions to exchanges to sell or withdraw to private wallets to hold. Supports Ethereum and Solana. |
 | [Currency Exchange Mcp](https://apify.com/vector384/currency-exchange-mcp?fpr=p2hrc6) | Real-time currency exchange rates and crypto prices via MCP. Convert 60+ fiat currencies and 30+ cryptocurrencies with multi-source failover. No API keys needed. |
@@ -210,6 +211,7 @@
 | [Transfermarkt football scraper V2](https://apify.com/handsome_apostrophe/transfermarkt-football-scraper-v2?fpr=p2hrc6) | Complete Transfermarkt data: player profiles, market value history, transfer fees, achievements. 50+ leagues, custom URLs, multi-locale. Premier League to Liga 3. The most comprehensive football... |
 | [Travel Accommodation Scraper](https://apify.com/lentic_clockss/travel-accommodation-scraper?fpr=p2hrc6) | Search hotels and vacation rentals across Booking.com and Airbnb in one run. Compare prices, ratings, and availability. No login, no API key needed. |
 | [Trello MCP Server](https://apify.com/scraper_guru/trello-mcp-server?fpr=p2hrc6) | Stop switching tabs. The Trello MCP Server connects Claude, Cursor, Windsurf, and VS Code to your Trello boards via the Model Context Protocol (MCP). Create cards, move tasks between columns, add... |
+| [TripAdvisor Scraper – Hotels, Restaurants & Reviews](https://apify.com/khadinakbar/tripadvisor-scraper?fpr=p2hrc6) | Extract hotels, restaurants, and attractions from TripAdvisor — including ratings, contact info, amenities, and reviews — from search queries or direct URLs. |
 | [Trustpilot MCP Server [PPR]](https://apify.com/zadexinho/trustpilot-mcp-server?fpr=p2hrc6) | MCP server giving AI agents access to Trustpilot reviews, ratings, company profiles, and category data. 3 tools: get_reviews, get_company_profile, browse_category. Filter by stars, language, date,... |
 | [Twitter Account-Based-In Locator by Screen Name](https://apify.com/fastcrawler/twitter-account-based-in-locator-by-screen-name?fpr=p2hrc6) | Fetch detailed “About” information for any Twitter/X user using their screen name. This actor retrieves profile metadata such as account_based_in, location_accurate, bio details, and other About... |
 | [Twitter Profile Hunter: Bulk Website To Twitter Mapper](https://apify.com/6sigmag/twitter-profile-hunter-bulk-website-to-twitter-mapper?fpr=p2hrc6) | Transform website URLs into valuable Twitter business profiles in bulk. Automatically extract domains and find associated Twitter accounts for powerful lead generation, competitor analysis, and market... |
