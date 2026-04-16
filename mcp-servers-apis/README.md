@@ -2,7 +2,7 @@
 
 <p align="right"><a href="../README.md#table-of-contents">Back to main list</a></p>
 
-**235 APIs in this category**
+**234 APIs in this category**
 
 | API Name | Description |
 |----------|-------------|
@@ -224,7 +224,6 @@
 | [Vinted MCP Server — AI-Powered Marketplace Data](https://apify.com/kazkn/vinted-mcp-server?fpr=p2hrc6) | First Vinted MCP Server. Connect any AI agent to Vinted: search items, compare prices across 19 countries, analyze sellers, track trending. 5 tools via Streamable HTTP. Works with Claude, Cursor,... |
 | [Web Search MCP Server](https://apify.com/abotapi/ai-search-mcp-server?fpr=p2hrc6) | An Apify MCP Server that provides real-time web search capabilities for AI agents via the Model Context Protocol (MCP). |
 | [Webflow MCP Server](https://apify.com/minute_contest/webflow-mcp-server?fpr=p2hrc6) | Connect AI assistants to Webflow via MCP. 22+ tools for sites, CMS collections, pages, and content. Works with Claude, ChatGPT, n8n workflows. |
-| [Website Content Crawler Pro](https://apify.com/datascoutapi/website-content-crawler-pro?fpr=p2hrc6) | Crawl websites and extract clean, structured content in Markdown, JSON, or plain text for AI models, LLMs, vector DBs, or RAG pipelines. Fast, reliable, and stealthy, with bulk processing, advanced... |
 | [Website Performance & Technical SEO MCP Server for AI Assistant](https://apify.com/alizarin_refrigerator-owner/performance-seo-mcp-server?fpr=p2hrc6) | MCP Server providing AI assistants with unified access to website performance and technical SEO analysis through a single interface. PageSpeed Insights, Core Web Vitals, Lighthouse audits, robots.txt... |
 | [Website Scraper](https://apify.com/dz_omar/ai-lead-extractor?fpr=p2hrc6) | Extract information from websites using intelligent AI 🤖from contact details to custom data fields, summaries, and creative content 🌐. Automatically crawl contact, about, and team pages to gather... |
 | [WhatsApp Link Hunter: Bulk Website To WhatsApp Mapper](https://apify.com/6sigmag/whatsapp-link-hunter-bulk-website-to-whatsapp-mapper?fpr=p2hrc6) | Transform website URLs into valuable WhatsApp Link in bulk. Automatically extract domains and find associated Whatsapp accounts for powerful lead generation, competitor analysis, and market research.... |
