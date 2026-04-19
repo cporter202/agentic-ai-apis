@@ -26,28 +26,28 @@
 
 ## At A Glance
 
-> The ultimate collection of APIs for building autonomous AI agents - **2,326 production-ready APIs** across **Agents**, **AI Models**, and **MCP Servers**.
+> The ultimate collection of APIs for building autonomous AI agents - **2,341 production-ready APIs** across **Agents**, **AI Models**, and **MCP Servers**.
 
 This repository is designed to feel like a launchpad, not a junk drawer. It is tightly scoped around the API layers that matter most when you are building autonomous systems, copilots, tool-using assistants, and MCP-native workflows.
 
 | Metric | Count |
 |--------|-------|
-| Total APIs | 2,326 |
+| Total APIs | 2,341 |
 | Categories | 3 |
-| Last Updated | 2026-04-18 |
+| Last Updated | 2026-04-19 |
 | Focus | Agentic AI infrastructure |
 
 <table>
   <tr>
     <td width="33%" valign="top">
       <h3>Agents</h3>
-      <p><strong>600 APIs</strong></p>
+      <p><strong>601 APIs</strong></p>
       <p>Execution layers, orchestration, autonomous task handling, and agent-style workflows.</p>
       <p><a href="./agents-apis/"><strong>Open Agents Directory</strong></a></p>
     </td>
     <td width="33%" valign="top">
       <h3>AI Models</h3>
-      <p><strong>1,492 APIs</strong></p>
+      <p><strong>1,506 APIs</strong></p>
       <p>Generation, reasoning, extraction, transformation, and model-powered product building blocks.</p>
       <p><a href="./ai-models-apis/"><strong>Open AI Models Directory</strong></a></p>
     </td>
