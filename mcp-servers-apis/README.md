@@ -2,7 +2,7 @@
 
 <p align="right"><a href="../README.md#table-of-contents">Back to main list</a></p>
 
-**234 APIs in this category**
+**236 APIs in this category**
 
 | API Name | Description |
 |----------|-------------|
@@ -132,6 +132,7 @@
 | [Job Market Intelligence MCP Server](https://apify.com/onetapstudio/job-market-intelligence-mcp?fpr=p2hrc6) | Search jobs across Indeed and LinkedIn at the same time. Get salary data from Glassdoor and Levels.fyi. See which companies are hiring the most and what skills are in demand for any role and location. |
 | [Lead Enrichment MCP Server](https://apify.com/alizarin_refrigerator-owner/lead-enrichment-mcp-server?fpr=p2hrc6) | MCP Server that enables AI assistants like Claude to orchestrate complex lead enrichment & prospecting workflows through natural conversation. Instead of manually running ask Claude:  "Find 10 SaaS... |
 | [Lead Enrichment Pipeline MCP Server](https://apify.com/onetapstudio/lead-enrichment-mcp?fpr=p2hrc6) | Find businesses on Google Maps and get contact emails, phone numbers, and social profiles in one call. Search by industry and location. Get names, addresses, ratings, websites, and enriched contact... |
+| [Linear Bootstrap MCP](https://apify.com/toolwright/linear-bootstrap-mcp?fpr=p2hrc6) | Turn a sentence into a full Linear project — milestones, epics, issues, dependencies, labels. Reads your team's existing conventions so the output matches how you already work. 7 tools + included... |
 | [Linkedin Ads Mcp Server [PPR]](https://apify.com/zadexinho/linkedin-ads-mcp-server?fpr=p2hrc6) | MCP server providing LinkedIn Ad Library data to AI agents. Tools: [search_linkedin_ads], [get_ad_details], [get_advertiser_ads]. Connect Claude Desktop, Cursor, n8n, or any MCP-compatible client.... |
 | [LinkedIn Jobs MCP Server](https://apify.com/shahidirfan/linkedin-jobs-mcp-server?fpr=p2hrc6) | Seamlessly connect your LLMs to real-time LinkedIn job data with this powerful MCP Server. Query listings, filter opportunities, and integrate job market insights directly into your AI workflows. The... |
 | [LinkedIn Jobs Scraper](https://apify.com/lentic_clockss/linkedin-jobs-scraper?fpr=p2hrc6) | Scrape LinkedIn job listings at scale. Extract job titles, companies, salaries, descriptions, and more. No login required. |
@@ -232,6 +233,7 @@
 | [Yelp Scraper - Extract Business Data, Contacts & Reviews](https://apify.com/khadinakbar/yelp-scraper-all-in-one?fpr=p2hrc6) | Scrape Yelp businesses at scale. Extract name, rating, reviews, price range, categories, address, phone, website, hours, GPS coordinates, claimed status, photos count and recent reviews. Supports... |
 | [YouTube Comments Scraper (with Replies)](https://apify.com/khadinakbar/youtube-comments-scraper?fpr=p2hrc6) | Extract comments and replies from YouTube videos by URL or ID. Returns author, text, likes, reply count, timestamps, pinned/hearted status. No API key required. Export scraped data, run via API,... |
 | [Youtube Link Hunter: Bulk Website To Youtube Mapper](https://apify.com/6sigmag/youtube-link-hunter-bulk-website-to-youtube-mapper?fpr=p2hrc6) | Transform website URLs into valuable Youtube Link in bulk. Automatically extract domains and find associated Youtube accounts for powerful lead generation, competitor analysis, and market research.... |
+| [YouTube Scraper](https://apify.com/starvibe/youtube-scraper?fpr=p2hrc6) | Scrape YouTube videos by keyword search or channel. Extract video titles, views, likes, comments, subscriber counts, descriptions, tags, and more. No YouTube API key required - no quota limits. Export... |
 | [YouTube Scraper](https://apify.com/lentic_clockss/youtube-scraper?fpr=p2hrc6) | YouTube scraper with transcript extraction. Search videos, scrape channels, get exact metadata, and extract subtitles/captions with timestamps. No API key, no browser. Fast HTTP-only. |
 | [YouTube Shorts Scraper](https://apify.com/lentic_clockss/youtube-shorts-scraper?fpr=p2hrc6) | Scrape YouTube Shorts from any channel or search query. Get titles, view counts, thumbnails, video IDs, and channel info. Fast HTTP-only extraction, no browser needed. No login required. |
 | [YouTube Shorts Scraper — Titles, Views, Hashtags & Viral Score](https://apify.com/khadinakbar/youtube-shorts-scraper?fpr=p2hrc6) | Scrape YouTube Shorts by keyword, channel, or hashtag. Extracts titles, views, likes, comments, audio/music metadata, hashtags, engagement rate, and viral score. No proxy required for keyword... |
