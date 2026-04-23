@@ -2,7 +2,7 @@
 
 <p align="right"><a href="../README.md#table-of-contents">Back to main list</a></p>
 
-**241 APIs in this category**
+**242 APIs in this category**
 
 | API Name | Description |
 |----------|-------------|
@@ -60,6 +60,7 @@
 | [Cbo Budget Scraper](https://apify.com/fortuitous_pirate/cbo-budget-scraper?fpr=p2hrc6) | - |
 | [check x account dm status（direct message）](https://apify.com/fastcrawler/check-x-account-dm-status-direct-message?fpr=p2hrc6) | This actor automatically checks whether a Twitter/X user has **open Direct Messages (DMs)**.   It is designed for developers, growth hackers, analysts, and campaign managers who need to filter or... |
 | [Clutch.co Mcp Server [PPR]](https://apify.com/zadexinho/clutch-mcp-server?fpr=p2hrc6) | MCP server for AI agents to access Clutch.co B2B company profiles, reviews, and service provider data. Tools: get_company for profiles with service lines and industry focus, search_companies to browse... |
+| [Clutch.co Scraper — Extract Agency Leads & Reviews](https://apify.com/khadinakbar/clutch-scraper?fpr=p2hrc6) | Scrape Clutch.co company listings to extract structured B2B lead data: company name, star rating, review count, hourly rate, min project size, employees, location, services, and website. Supports all... |
 | [Coin Identifier MCP Server](https://apify.com/mowell_labs/coin-identifier-mcp?fpr=p2hrc6) | Vision-based coin and currency identification MCP server. Send a photo of any coin, paper money, or bullion piece and get structured identification data including country, denomination, year, mint... |
 | [Collection Vault MCP](https://apify.com/mowell_labs/collection-vault?fpr=p2hrc6) | Full CRUD collectible collection management. Track coins, trading cards, bullion, stamps, comics, and any collectible. Features sub-collections, value history, web search valuations, insurance export,... |
 | [Competitive Intelligence MCP Server](https://apify.com/alizarin_refrigerator-owner/competitive-intelligence-mcp-server?fpr=p2hrc6) | 9-in-1 MCP server for AI-powered competitor analysis. Use with Claude, GPT or any AI assistant that supports MCP tools. This MCP server bundles 9 competitive intelligence tools into one endpoint.... |
@@ -238,8 +239,8 @@
 | [Yelp Scraper - Extract Business Data, Contacts & Reviews](https://apify.com/khadinakbar/yelp-scraper-all-in-one?fpr=p2hrc6) | Scrape Yelp businesses at scale. Extract name, rating, reviews, price range, categories, address, phone, website, hours, GPS coordinates, claimed status, photos count and recent reviews. Supports... |
 | [YouTube Comments Scraper (with Replies)](https://apify.com/khadinakbar/youtube-comments-scraper?fpr=p2hrc6) | Extract comments and replies from YouTube videos by URL or ID. Returns author, text, likes, reply count, timestamps, pinned/hearted status. No API key required. Export scraped data, run via API,... |
 | [Youtube Link Hunter: Bulk Website To Youtube Mapper](https://apify.com/6sigmag/youtube-link-hunter-bulk-website-to-youtube-mapper?fpr=p2hrc6) | Transform website URLs into valuable Youtube Link in bulk. Automatically extract domains and find associated Youtube accounts for powerful lead generation, competitor analysis, and market research.... |
+| [YouTube Research & Transcript Scraper](https://apify.com/lentic_clockss/youtube-research-scraper?fpr=p2hrc6) | Search YouTube, export channel and video data, and pull transcripts for shortlisted videos. No API key, no browser. Fast HTTP-only research workflow. |
 | [YouTube Scraper](https://apify.com/starvibe/youtube-scraper?fpr=p2hrc6) | Scrape YouTube videos by keyword search or channel. Extract video titles, views, likes, comments, subscriber counts, descriptions, tags, and more. No YouTube API key required - no quota limits. Export... |
-| [YouTube Scraper](https://apify.com/lentic_clockss/youtube-scraper?fpr=p2hrc6) | YouTube scraper with transcript extraction. Search videos, scrape channels, get exact metadata, and extract subtitles/captions with timestamps. No API key, no browser. Fast HTTP-only. |
 | [YouTube Shorts Scraper](https://apify.com/lentic_clockss/youtube-shorts-scraper?fpr=p2hrc6) | Scrape YouTube Shorts from any channel or search query. Get titles, view counts, thumbnails, video IDs, and channel info. Fast HTTP-only extraction, no browser needed. No login required. |
 | [YouTube Shorts Scraper — Titles, Views, Hashtags & Viral Score](https://apify.com/khadinakbar/youtube-shorts-scraper?fpr=p2hrc6) | Scrape YouTube Shorts by keyword, channel, or hashtag. Extracts titles, views, likes, comments, audio/music metadata, hashtags, engagement rate, and viral score. No proxy required for keyword... |
 | [YouTube Subtitle Scraper – Download Captions & Transcripts](https://apify.com/datascoutapi/youtube-subtitle-scraper?fpr=p2hrc6) | Extract YouTube subtitles and auto-generated captions in seconds – no YouTube API key required. Get clean, structured subtitle text ready for analysis, SEO optimization, content repurposing, academic... |
