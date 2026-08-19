@@ -326,7 +326,7 @@ function writeRootReadme(categoryCounts) {
     content += `Anything outside those three categories has been removed from the tracked repository structure.\n\n`;
 
     content += `## Star History\n\n`;
-    content += `[![Star History Chart](https://api.star-history.com/svg?repos=cporter202/agentic-ai-apis&type=Date)](https://www.star-history.com/#cporter202/agentic-ai-apis&Date)\n\n`;
+    content += `[![Star History Chart](https://star-history.dera.page/svg?repos=cporter202/agentic-ai-apis&type=Date)](https://star-history.dera.page/#cporter202/agentic-ai-apis&Date)\n\n`;
 
     content += `## Maintenance Notes\n\n`;
     content += `- A GitHub Actions workflow now syncs the Apify catalog daily and commits only when upstream data actually changes.\n`;

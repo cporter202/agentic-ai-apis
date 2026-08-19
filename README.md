@@ -147,7 +147,7 @@ Anything outside those three categories has been removed from the tracked reposi
 
 ## Star History
 
-[![Star History Chart](https://api.star-history.com/svg?repos=cporter202/agentic-ai-apis&type=Date)](https://www.star-history.com/#cporter202/agentic-ai-apis&Date)
+[![Star History Chart](https://star-history.dera.page/svg?repos=cporter202/agentic-ai-apis&type=Date)](https://star-history.dera.page/#cporter202/agentic-ai-apis&Date)
 
 ## Maintenance Notes
 
