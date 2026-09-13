@@ -26,34 +26,34 @@
 
 ## At A Glance
 
-> The ultimate collection of APIs for building autonomous AI agents - **2,929 production-ready APIs** across **Agents**, **AI Models**, and **MCP Servers**.
+> The ultimate collection of APIs for building autonomous AI agents - **2,785 production-ready APIs** across **Agents**, **AI Models**, and **MCP Servers**.
 
 This repository is designed to feel like a launchpad, not a junk drawer. It is tightly scoped around the API layers that matter most when you are building autonomous systems, copilots, tool-using assistants, and MCP-native workflows.
 
 | Metric | Count |
 |--------|-------|
-| Total APIs | 2,929 |
+| Total APIs | 2,785 |
 | Categories | 3 |
-| Last Updated | 2026-09-12 |
+| Last Updated | 2026-09-13 |
 | Focus | Agentic AI infrastructure |
 
 <table>
   <tr>
     <td width="33%" valign="top">
       <h3>Agents</h3>
-      <p><strong>851 APIs</strong></p>
+      <p><strong>826 APIs</strong></p>
       <p>Execution layers, orchestration, autonomous task handling, and agent-style workflows.</p>
       <p><a href="./agents-apis/"><strong>Open Agents Directory</strong></a></p>
     </td>
     <td width="33%" valign="top">
       <h3>AI Models</h3>
-      <p><strong>1,608 APIs</strong></p>
+      <p><strong>1,457 APIs</strong></p>
       <p>Generation, reasoning, extraction, transformation, and model-powered product building blocks.</p>
       <p><a href="./ai-models-apis/"><strong>Open AI Models Directory</strong></a></p>
     </td>
     <td width="33%" valign="top">
       <h3>MCP Servers</h3>
-      <p><strong>470 APIs</strong></p>
+      <p><strong>502 APIs</strong></p>
       <p>Model Context Protocol integrations that connect assistants to real tools, systems, and data.</p>
       <p><a href="./mcp-servers-apis/"><strong>Open MCP Servers Directory</strong></a></p>
     </td>
