@@ -168,7 +168,7 @@ function writeCategoryReadme(category, categoryActors) {
     );
 
     let content = `# ${category.displayName}\n\n`;
-    content += `<p align="right"><a href="../README.md#table-of-contents">Back to main list</a></p>\n\n`;
+    content += `<p align="right"><a href="../README.md">Back to main list</a></p>\n\n`;
     content += `**${categoryActors.length.toLocaleString()} APIs in this category**\n\n`;
     content += `| API Name | Description |\n`;
     content += `|----------|-------------|\n`;
