@@ -1,6 +1,6 @@
 # MCP Servers
 
-<p align="right"><a href="../README.md#table-of-contents">Back to main list</a></p>
+<p align="right"><a href="../README.md">Back to main list</a></p>
 
 **366 APIs in this category**
 

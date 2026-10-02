@@ -1,6 +1,6 @@
 # Agents
 
-<p align="right"><a href="../README.md#table-of-contents">Back to main list</a></p>
+<p align="right"><a href="../README.md">Back to main list</a></p>
 
 **707 APIs in this category**
 
