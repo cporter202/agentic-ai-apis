@@ -1,4 +1,3 @@
-
 <div align="center">
 
 <img src="./assets/readme-hero-v2.svg" alt="agentic-ai-apis hero banner" width="100%" />
@@ -27,34 +26,34 @@
 
 ## At A Glance
 
-> The ultimate collection of APIs for building autonomous AI agents - **2,485 production-ready APIs** across **Agents**, **AI Models**, and **MCP Servers**.
+> The ultimate collection of APIs for building autonomous AI agents - **2,147 production-ready APIs** across **Agents**, **AI Models**, and **MCP Servers**.
 
 This repository is designed to feel like a launchpad, not a junk drawer. It is tightly scoped around the API layers that matter most when you are building autonomous systems, copilots, tool-using assistants, and MCP-native workflows.
 
 | Metric | Count |
 |--------|-------|
-| Total APIs | 2,485 |
+| Total APIs | 2,147 |
 | Categories | 3 |
-| Last Updated | 2026-10-16 |
+| Last Updated | 2026-10-17 |
 | Focus | Agentic AI infrastructure |
 
 <table>
   <tr>
     <td width="33%" valign="top">
       <h3>Agents</h3>
-      <p><strong>601 APIs</strong></p>
+      <p><strong>568 APIs</strong></p>
       <p>Execution layers, orchestration, autonomous task handling, and agent-style workflows.</p>
       <p><a href="./agents-apis/"><strong>Open Agents Directory</strong></a></p>
     </td>
     <td width="33%" valign="top">
       <h3>AI Models</h3>
-      <p><strong>1,414 APIs</strong></p>
+      <p><strong>1,236 APIs</strong></p>
       <p>Generation, reasoning, extraction, transformation, and model-powered product building blocks.</p>
       <p><a href="./ai-models-apis/"><strong>Open AI Models Directory</strong></a></p>
     </td>
     <td width="33%" valign="top">
       <h3>MCP Servers</h3>
-      <p><strong>470 APIs</strong></p>
+      <p><strong>343 APIs</strong></p>
       <p>Model Context Protocol integrations that connect assistants to real tools, systems, and data.</p>
       <p><a href="./mcp-servers-apis/"><strong>Open MCP Servers Directory</strong></a></p>
     </td>
@@ -156,16 +155,3 @@ Anything outside those three categories has been removed from the tracked reposi
 - The generation scripts in [settings](./settings/) are configured to rebuild only the three tracked categories above.
 - The visual README layout is now part of the repo's default presentation, not just a temporary pass.
 - API links keep the existing affiliate tracking from the upstream source data.
-
-<!-- AIWITHCHRIS-BANNER-START -->
-<p align="center">
-  <a href="https://aiwithchris.com" target="_blank" rel="noopener">
-    <img src=".github/assets/ai-toolkit-banner.png" alt="Hey, I'm Chris — Work Smarter, Create Faster, Earn More With AI. Join my AI Playbook at aiwithchris.com, $10/month" width="100%">
-  </a>
-</p>
-<p align="center">
-  <a href="https://aiwithchris.com"><strong>🚀 Join my AI Playbook — aiwithchris.com</strong></a><br>
-  $10/month · 3,600+ prompts · agent workflows · repo breakdowns · money ideas
-</p>
-<!-- AIWITHCHRIS-BANNER-END -->
-
