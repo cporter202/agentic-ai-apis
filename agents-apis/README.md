@@ -6,6 +6,14 @@
 
 | API Name | Description |
 |----------|-------------|
+| [OpenAPI Validate API](https://apimesa.com) | Validate core OpenAPI JSON structure and count paths and operations for agent/tool integration checks. |
+| [JSON Schema Infer API](https://apimesa.com) | Infer a practical JSON Schema from a sample API response or payload. |
+| [JSON Schema Validate API](https://apimesa.com) | Validate JSON data against a lightweight subset of JSON Schema including type, required, properties, arrays, enums, and ranges. |
+| [cURL to Fetch API](https://apimesa.com) | Convert a simple cURL command into JavaScript fetch code for docs, agents, and SDK bootstrapping. |
+| [cURL to Python API](https://apimesa.com) | Convert a simple cURL command into Python requests code for examples and automation scripts. |
+| [Webhook Replay Payload API](https://apimesa.com) | Generate a replayable webhook cURL command with optional timestamped HMAC signature headers. |
+| [API Response Shape API](https://apimesa.com) | Summarize JSON response structure into fields, paths, types, and an inferred schema for agents and docs. |
+| [Env Var Template API](https://apimesa.com) | Generate .env.example content and a Markdown environment variable table from variable names or NAME=value lines. |
 | [🌍 Remote Jobs Scraper — Work From Home Jobs, Salary USD](https://apify.com/iettiu/remote-jobs-scraper?fpr=p2hrc6) | Scrape remote jobs from six public boards — WeWorkRemotely, RemoteOK, Remotive, Jobicy, Himalayas, Arbeitnow — plus 582 company career pages on Greenhouse and Ashby that no other remote-jobs scraper... |
 | [🌸 Tweets / X - Scraper](https://apify.com/mikolabs/x-scraper?fpr=p2hrc6) | Extract anything from X (Twitter) with speed and precision. This smart scraper auto-detects what to collect—tweets, profiles, users, lists, or media—and delivers clean, structured data instantly. Just... |
 | [🎙️ Podcast Episode Ideas Creator](https://apify.com/powerai/podcast-episode-ideas-creator?fpr=p2hrc6) | Transform your podcast content strategy with AI-powered episode ideas! This intelligent tool analyzes your podcast theme and target audience to generate comprehensive episode plans, including topic... |
