@@ -24,49 +24,36 @@
 
 </div>
 
-<!-- APIMESA-FEATURED-START -->
-## ⭐ Featured: APIMesa
-
-<p align="center">
-  <a href="https://apimesa.com" target="_blank" rel="noopener">
-    <img src=".github/assets/apimesa-promo-banner.png" alt="APIMesa — AI, Scraping & Data APIs. 150+ APIs, one API key, live playground at apimesa.com" width="100%">
-  </a>
-</p>
-
-**[APIMesa](https://apimesa.com)** is a pay-per-call API marketplace with 150+ live APIs for AI, scraping, data, SEO, lead generation, media, and developer utilities — one API key, clear per-call credit pricing, and a live playground for every API.
-
-<!-- APIMESA-FEATURED-END -->
-
 ## At A Glance
 
-> The ultimate collection of APIs for building autonomous AI agents - **2,418 production-ready APIs** across **Agents**, **AI Models**, and **MCP Servers**.
+> The ultimate collection of APIs for building autonomous AI agents - **2,514 production-ready APIs** across **Agents**, **AI Models**, and **MCP Servers**.
 
 This repository is designed to feel like a launchpad, not a junk drawer. It is tightly scoped around the API layers that matter most when you are building autonomous systems, copilots, tool-using assistants, and MCP-native workflows.
 
 | Metric | Count |
 |--------|-------|
-| Total APIs | 2,418 |
+| Total APIs | 2,514 |
 | Categories | 3 |
-| Last Updated | 2026-10-19 |
+| Last Updated | 2026-10-20 |
 | Focus | Agentic AI infrastructure |
 
 <table>
   <tr>
     <td width="33%" valign="top">
       <h3>Agents</h3>
-      <p><strong>657 APIs</strong></p>
+      <p><strong>589 APIs</strong></p>
       <p>Execution layers, orchestration, autonomous task handling, and agent-style workflows.</p>
       <p><a href="./agents-apis/"><strong>Open Agents Directory</strong></a></p>
     </td>
     <td width="33%" valign="top">
       <h3>AI Models</h3>
-      <p><strong>1,393 APIs</strong></p>
+      <p><strong>1,456 APIs</strong></p>
       <p>Generation, reasoning, extraction, transformation, and model-powered product building blocks.</p>
       <p><a href="./ai-models-apis/"><strong>Open AI Models Directory</strong></a></p>
     </td>
     <td width="33%" valign="top">
       <h3>MCP Servers</h3>
-      <p><strong>368 APIs</strong></p>
+      <p><strong>469 APIs</strong></p>
       <p>Model Context Protocol integrations that connect assistants to real tools, systems, and data.</p>
       <p><a href="./mcp-servers-apis/"><strong>Open MCP Servers Directory</strong></a></p>
     </td>
