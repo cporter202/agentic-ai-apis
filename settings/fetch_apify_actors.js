@@ -15,8 +15,11 @@ const fs = require('fs');
 const path = require('path');
 
 const API_BASE_URL = 'api.apify.com';
+const REQUEST_TIMEOUT_MS = 15000;
+const MAX_RETRIES = 3;
+const RETRY_BASE_DELAY_MS = 1000;
 
-function makeRequest(hostname, requestPath) {
+function makeRequest(hostname, requestPath, attempt = 0) {
     return new Promise((resolve, reject) => {
         const options = {
             hostname,
@@ -27,6 +30,20 @@ function makeRequest(hostname, requestPath) {
             },
         };
 
+        const retry = (error) => {
+            if (attempt >= MAX_RETRIES) {
+                reject(error);
+                return;
+            }
+
+            const delay = RETRY_BASE_DELAY_MS * 2 ** attempt;
+            setTimeout(() => {
+                makeRequest(hostname, requestPath, attempt + 1)
+                    .then(resolve)
+                    .catch(reject);
+            }, delay);
+        };
+
         const req = https.request(options, (res) => {
             let data = '';
 
@@ -35,6 +52,21 @@ function makeRequest(hostname, requestPath) {
             });
 
             res.on('end', () => {
+                const statusCode = res.statusCode || 0;
+                const transient = statusCode === 429 || statusCode >= 500;
+
+                if (statusCode < 200 || statusCode >= 300) {
+                    const error = new Error(`HTTP ${statusCode}`);
+                    error.statusCode = statusCode;
+
+                    if (transient) {
+                        retry(error);
+                    } else {
+                        reject(error);
+                    }
+                    return;
+                }
+
                 try {
                     resolve(JSON.parse(data));
                 } catch (error) {
@@ -43,7 +75,14 @@ function makeRequest(hostname, requestPath) {
             });
         });
 
-        req.on('error', reject);
+        req.setTimeout(REQUEST_TIMEOUT_MS, () => {
+            req.destroy(new Error('HTTPS request timeout'));
+        });
+
+        req.on('error', (error) => {
+            retry(error);
+        });
+
         req.end();
     });
 }
@@ -98,8 +137,7 @@ async function fetchAllActors(limit = 100) {
             await new Promise((resolve) => setTimeout(resolve, 500));
         } catch (error) {
             console.error(`Error fetching actors at offset ${offset}: ${error.message}`);
-            console.log('Retrying in 5 seconds...');
-            await new Promise((resolve) => setTimeout(resolve, 5000));
+            throw error;
         }
     }
 
